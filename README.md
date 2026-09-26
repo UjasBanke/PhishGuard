@@ -1,6 +1,6 @@
 # PhishGuard — Hybrid Phishing URL Detection & Risk Analysis
 
-PhishGuard is a cybersecurity application that analyzes URLs **as strings** without visiting, resolving, or executing them. It evaluates the structure and characteristics of a URL and classifies it as **LOW RISK, SUSPICIOUS, or HIGH RISK**, along with a 0–100 risk score and human-readable explanations.
+PhishGuard is an application that analyzes URLs **as strings** without visiting, resolving, or executing them. It evaluates the structure and characteristics of a URL and classifies it as **LOW RISK, SUSPICIOUS, or HIGH RISK**, along with a 0–100 risk score and human-readable explanations.
 
 The system combines a **Random Forest machine-learning classifier** with a **rule-based security engine** to provide both predictive analysis and interpretable security indicators. The analysis is exposed through a **FastAPI REST API** and presented through a dark, cyber-security themed **Streamlit threat detection console**.
 
@@ -23,8 +23,6 @@ The system combines a **Random Forest machine-learning classifier** with a **rul
 * Scan history and result visualization
 * JSON result export
 * FastAPI REST API
-* Automated security and unit testing
-* Docker support
 
 ### Detection Pipeline
 
@@ -87,8 +85,7 @@ Reasons:
 **URL Analysis:** urllib.parse, tldextract
 **Frontend:** Streamlit
 **Visualization:** Plotly
-**Testing:** Pytest
-**Deployment:** Docker
+
 
 ### Project Structure
 
@@ -144,6 +141,4 @@ For production-level evaluation, the system would require large real-world phish
 * Browser-extension integration
 * Isolated webpage analysis and sandboxing
 
-### Disclaimer
 
-PhishGuard is an educational and research project designed to demonstrate phishing URL analysis, machine learning, explainable security rules, and secure application development. A low-risk result does not guarantee that a URL is safe, and a high-risk result does not by itself prove malicious intent.
