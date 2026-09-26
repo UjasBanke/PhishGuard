@@ -1,0 +1,62 @@
+{
+  "metrics": {
+    "accuracy": 0.9894,
+    "precision": 0.9875,
+    "recall": 0.9912,
+    "f1": 0.9894,
+    "roc_auc": 0.9994,
+    "confusion_matrix": [
+      [
+        790,
+        10
+      ],
+      [
+        7,
+        793
+      ]
+    ],
+    "cv_f1_mean": 0.9913,
+    "cv_f1_std": 0.0015
+  },
+  "meta": {
+    "trained_at": "2026-09-24T10:01:17+00:00",
+    "sklearn_version": "1.9.1",
+    "numpy_version": "2.5.3",
+    "n_samples": 8000,
+    "n_train": 6400,
+    "n_test": 1600,
+    "n_estimators": 300,
+    "dataset_is_synthetic": true,
+    "dataset_path": "data\\demo_urls.csv"
+  },
+  "feature_importances": {
+    "num_suspicious_keywords": 0.16621452771860412,
+    "brand_in_host": 0.11917780403892311,
+    "domain_hyphens": 0.0985930168003204,
+    "suspicious_tld": 0.06330699761747505,
+    "url_length": 0.06018165069120774,
+    "num_hyphens": 0.05716464379367044,
+    "domain_digits": 0.05231502910145157,
+    "domain_length": 0.04934294123944577,
+    "num_digits": 0.039229000105760595,
+    "digit_ratio": 0.0369212882242051,
+    "num_dots": 0.03581067411729011,
+    "path_length": 0.03308475900909677,
+    "domain_entropy": 0.03016049916581697,
+    "path_entropy": 0.0294895026882389,
+    "has_https": 0.021018772413278146,
+    "is_shortener": 0.020664133928450852,
+    "num_path_segments": 0.020336631686015755,
+    "brand_in_path": 0.01870312958728111,
+    "num_special_chars": 0.008959239827730612,
+    "num_subdomains": 0.00868982145792722,
+    "query_length": 0.00766345194445321,
+    "num_query_params": 0.0075161791054863085,
+    "has_ip_domain": 0.006857687759299145,
+    "has_at_symbol": 0.002983996135433114,
+    "has_punycode": 0.0026053645429606593,
+    "has_port": 0.002171430352627617,
+    "double_slash_in_path": 0.0006781924066196625,
+    "num_percent_encoded": 0.0001596345409298398
+  }
+}
